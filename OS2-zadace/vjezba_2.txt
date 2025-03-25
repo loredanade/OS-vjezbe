@@ -1,0 +1,25 @@
+1.zadatak
+mkdir -p vjezba_2/data
+mkdir vjezba_2/backup
+cd vjezba_2/data
+touch script.js style.css .env
+echo 'console.log("Hello, World!")' > script.js
+echo 'body { background-color: #f0f0f0; }' > style.css
+echo 'VJEBE=OS' > .env
+2.zadatak
+cd ..
+cp -rv data/* backup
+cd data
+ls -lahS ../backup
+3.zadatak
+cd ..
+rm -r -i ./data (-r rekurzivno, -i za svaku datoteku upita želimo li izbrisati)
+mkdir -p data
+cp -v -n backup/* data/
+ls -1 -l -A -t -h  data
+zadatak 4
+cd ..
+ls -A -l -S
+ls -l -h -S
+ls -l -t -R -a --color
+

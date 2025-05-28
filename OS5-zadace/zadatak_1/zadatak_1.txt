@@ -1,0 +1,22 @@
+python3 hello.py &
+- skripta se pokrenula i dobila sam [1] 2276 - PID procesa (jedinstveni identifikator procesa)
+
+htop je otvorio prozor u kojem vidimo procese i mozemo pronac po PID-u naš pokrenuti proces
+PRI (prioritet) - 20 
+NI (nice) - 0
+-normalni proces
+USER (tko je pokrenuo) - loredanadelic 
+VIRT (koliko virtualne memorije zauzima) - 17968
+RES (koliko fizike memorije zauzima) - 10240
+SHR (dijeljena memorija) - 6528
+S (status) - S (sleep) - nije aktivan
+CPU% - 0 (ne zauzima CPU)
+MEM% - 0.5 (zauzima 0.5% fizicke memorije)
+TIME - 0:00:01
+Command - python3 ./hello.py (naredba koja je pokrenula proces)
+
+
+
+kill 2276
+kill -9 2276
+pkill -f hello.py
